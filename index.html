@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mulwana Plumbing Services</title>
+
+<style>
+
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+background:#0077b6;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+/* PROFILE PICTURE */
+
+.profile-pic{
+width:70px;
+height:70px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid white;
+margin-bottom:10px;
+}
+
+/* NAVIGATION */
+
+nav{
+background:#023e8a;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SECTIONS */
+
+section{
+padding:40px;
+}
+
+/* SERVICES GRID */
+
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+/* CARDS */
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+flex:1 1 250px;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* BUTTONS */
+
+button{
+background:#0077b6;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#005f8a;
+}
+
+/* FORM */
+
+form input, form textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+form button{
+margin-top:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#03045e;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:25px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* REVIEWS */
+
+.review{
+background:white;
+padding:20px;
+margin-bottom:15px;
+border-radius:8px;
+}
+
+/* PAYMENT BUTTON */
+
+.pay-btn{
+display:inline-block;
+background:green;
+color:white;
+padding:12px 20px;
+border-radius:6px;
+text-decoration:none;
+margin-top:10px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+.services{
+flex-direction:column;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+header{
+padding:15px;
+}
+
+.profile-pic{
+width:60px;
+height:60px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="images/21.jpg" class="profile-pic" alt="Mulwana Profile">
+
+<h1>E&A PLUMBING COMPANY LTD</h1>
+
+<p>Professional Plumbing Services in Uganda</p>
+
+</header>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#booking">Booking</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<section id="home">
+
+<h2>Welcome</h2>
+
+<p>We provide reliable and affordable plumbing services in Kampala and Wakiso.</p>
+
+<a href="tel:+256704052684">
+<button>Call Now</button>
+</a>
+
+</section>
+
+<section id="services">
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="images/6.jpg" alt="pipe installation">
+<h3>Pipe Installation</h3>
+<p>Professional pipe installation services.</p>
+</div>
+
+<div class="card">
+<img src="images/5.jpg" alt="drain cleaning">
+<h3>Drain Cleaning</h3>
+<p>Fix blocked drainage quickly.</p>
+</div>
+
+<div class="card">
+<img src="images/9.jpg" alt="bathroom installation">
+<h3>Bathroom Plumbing</h3>
+<p>Toilet, sink and shower installation.</p>
+</div>
+
+<div class="card">
+<img src="images/7.jpg" alt="water tank">
+<h3>Water Tank Installation</h3>
+<p>Tank setup and repair.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Our Work</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="images/11.jpg" alt="Bathroom plumbing">
+<p>Bathroom installation project.</p>
+</div>
+
+<div class="card">
+<img src="images/8.jpg" alt="Water tank installation">
+<p>Water tank installation.</p>
+</div>
+
+<div class="card">
+
+<iframe width="100%" height="200"
+src="https://www.youtube.com/embed/9r0WdorLUhE"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<p>Watch our plumbing repair video.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<h2>Book Plumbing Service</h2>
+
+<form action="mailto:mulwanaplumbing@gmail.com" method="post" enctype="text/plain">
+
+<label>Your Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter phone number" required>
+
+<label>Service Needed</label>
+<input type="text" placeholder="Example: Pipe repair">
+
+<label>Your Location</label>
+<input type="text" placeholder="Kampala / Wakiso">
+
+<label>Upload Photo of Problem</label>
+<input type="file">
+
+<label>Describe the Problem</label>
+<textarea placeholder="Explain plumbing issue"></textarea>
+
+<button type="submit">Send Booking</button>
+
+</form>
+
+</section>
+
+<section id="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review">
+<strong>John – Kampala</strong>
+<p>Very professional plumbers. They unlocked my drains quickly!</p>
+</div>
+
+<div class="review">
+<strong>Sarah – Wakiso</strong>
+<p>Affordable and reliable service. Highly recommended.</p>
+</div>
+
+<div class="review">
+<strong>Peter – Entebbe</strong>
+<p>Installed our water tank perfectly at a good price.</p>
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Phone:
+<a href="tel:+256751851890">+256 751 851890</a>
+</p>
+
+<p>Phone:
+<a href="tel:+256704052684">+256 704 052684</a>
+</p>
+
+<p>Email:
+<a href="mailto:emmanateandsons@gmail.com">
+emmanateandsons@gmail.com
+</a>
+</p>
+
+<h3>Find Us</h3>
+
+<iframe
+src="https://maps.google.com/maps?q=0.368826,32.570957&z=15&output=embed"
+width="100%"
+height="300"
+style="border:0;">
+</iframe>
+
+<br><br>
+
+<a class="pay-btn" href="#">
+Pay for Plumbing Service
+</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Mulwana Plumbing Services</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/256751851890?text=Hello%20Mulwana%20Plumbing%20I%20need%20a%20service"
+target="_blank">
+💬 WhatsApp
+</a>
+
+</body>
+
+</html>
